@@ -1,4 +1,7 @@
-/*Creating table for data*/
+/*
+This script creates the holdings table that is provided by the administrator
+
+*/
 
 
 IF OBJECT_ID('t_holdings', 'U') IS NOT NULL
@@ -6,9 +9,6 @@ DROP TABLE t_holdings;
 
 
 CREATE TABLE t_holdings(
-asof_dt				date,
-field				varchar(255),
-value				decimal (38,12)
 asof_dt				date,
 Currency			varchar(255),
 PrintGroup			varchar(255),
@@ -30,4 +30,3 @@ RealizedPrice		decimal(38,12),
 RealizedFX			decimal(38,12),	
 RealizedCross		decimal(38,12),
 );
-
