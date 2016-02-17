@@ -4,11 +4,11 @@ This script creates the holdings table that is provided by the administrator
 */
 
 
-IF OBJECT_ID('t_holdings', 'U') IS NOT NULL
-DROP TABLE t_holdings;
+IF OBJECT_ID('t_pos_admin', 'U') IS NOT NULL
+DROP TABLE t_pos_admin;
 
 
-CREATE TABLE t_holdings(
+CREATE TABLE t_pos_admin(
 asof_dt				date,
 Currency			varchar(255),
 PrintGroup			varchar(255),
